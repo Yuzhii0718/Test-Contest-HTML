@@ -5,6 +5,7 @@ node_modules
 dist-ssr
 *.local
 public
+.idea
 
 # lock
 yarn.lock
