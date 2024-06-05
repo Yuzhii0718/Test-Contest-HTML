@@ -27,7 +27,7 @@ export default defineConfig({
         alias: {
             '~/': `${pathSrc}/`,
             // 需要使用 ssg 编译时，要把 vue 的别名注释掉
-            'vue': 'vue/dist/vue.esm-bundler.js',
+            // 'vue': 'vue/dist/vue.esm-bundler.js',
             "@": path.resolve(__dirname, 'src'),
         },
     },

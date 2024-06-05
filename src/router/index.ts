@@ -1,5 +1,6 @@
-import {createRouter, createWebHistory, createMemoryHistory} from 'vue-router'
-import {RouteRecordRaw} from 'vue-router'
+import { RouteRecordRaw } from 'vue-router'
+// import {createRouter, createWebHistory, createMemoryHistory} from 'vue-router'
+// import {RouteRecordRaw} from 'vue-router'
 import MainPage from '../components/MainPage.vue'
 import Comment01 from "../components/comment/comment01.vue";
 import Comment02 from "../components/comment/comment02.vue";
@@ -74,16 +75,16 @@ const routes: RouteRecordRaw[] = [
     }
 ]
 
-const isServer = typeof window === 'undefined';
-const history = isServer
-    ? createMemoryHistory(import.meta.env.BASE_URL)
-    : createWebHistory(import.meta.env.BASE_URL);
-
-const routerOptions = {
-    history: history,
-    routes,
-}
-
-const router = createRouter(routerOptions);
+// const isServer = typeof window === 'undefined';
+// const history = isServer
+//     ? createMemoryHistory(import.meta.env.BASE_URL)
+//     : createWebHistory(import.meta.env.BASE_URL);
+//
+// const routerOptions = {
+//     history: history,
+//     routes,
+// }
+//
+// const router = createRouter(routerOptions);
 
 export default routes
