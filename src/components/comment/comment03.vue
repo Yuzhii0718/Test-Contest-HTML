@@ -11,8 +11,8 @@ export default {
   },
   data() {
     return {
-      title: 'アニメ版と漫画版で決定的に違うのは、「最終回にめぐがどうなるか」！',
-      link: 'https://xn--q9j984gbug42c4wieqsm2o.jp/anime/chigai/',
+      title: '无垠宇宙中的人类探索',
+      link: 'https://news.cyol.com/gb/articles/2021-11/13/content_Lqx5guG7q.html',
       markdownFile: '/markdown/comment03.md'
     };
   }

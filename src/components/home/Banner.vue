@@ -14,10 +14,12 @@
 <!--    </el-carousel>-->
 <script setup  lang="ts">
 const items = [
-  'https://pics.prcm.jp/d00e9dad6977d/83016890/jpeg/83016890.jpeg',
-  'https://pics.prcm.jp/d00e9dad6977d/83016879/jpeg/83016879.jpeg',
-  'https://pics.prcm.jp/d00e9dad6977d/83016844/jpeg/83016844.jpeg',
-  'https://pics.prcm.jp/d00e9dad6977d/83016836/jpeg/83016836.jpeg',
+  'https://www.cnsa.gov.cn/english/template/10536202/10536227.png',
+  'https://www.cnsa.gov.cn/n6758824/n6759009/n6759040/c6780422/pic_6780422.jpg',
+  'https://www.cnsa.gov.cn/n6758824/n6759009/n6759041/c6780463/pic_6780463.jpg',
+  'https://www.cnsa.gov.cn/n6758824/n6759009/n6759042/c6780592/pic_6780592.jpg',
+  'https://www.cnsa.gov.cn/n6758824/n6759009/n6759043/c6780607/pic_6780607.jpg',
+  'https://www.cnsa.gov.cn/english/template/10536202/10536233.png',
 ]
 </script>
 
@@ -25,9 +27,9 @@ const items = [
   <br>
   <br>
   <div id="banner">
-    <p class="text-center demonstration">剧集截屏</p>
+    <p class="text-center demonstration">中国航天</p>
     <el-carousel
-        height="400px"
+        height="440px"
         direction="vertical"
         type="card"
         :autoplay="true"
@@ -46,7 +48,7 @@ const items = [
 .el-carousel__item h3 {
   color: #475669;
   opacity: 0.75;
-  line-height: 300px;
+  line-height: 400px;
   margin: 0;
   text-align: center;
 }
@@ -56,7 +58,7 @@ banner {
 }
 
 img {
-  width: 100%;
+  width: 80%;
 }
 
 </style>

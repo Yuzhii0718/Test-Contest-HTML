@@ -11,8 +11,8 @@ export default {
   },
   data() {
     return {
-      title: '天使な小生意気のレビューサイトについて',
-      link: 'https://xn--q9j984gbug42c4wieqsm2o.jp/',
+      title: '关于',
+      link: '',
       markdownFile: '/markdown/about.md'
     };
   }

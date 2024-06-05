@@ -13,49 +13,56 @@
         <span>Navigator One</span>
       </template>
       <el-menu-item-group>
-        <template #title><span>名场景以及伏笔</span></template>
+        <template #title><span>地外天体</span></template>
         <el-sub-menu index="1-1">
-          <template #title><span>第 1-10 卷</span></template>
-          <el-menu-item index="1-1-1" @click="navigateToPost_01">第 1 卷</el-menu-item>
-          <el-menu-item index="1-1-2" @click="navigateToPost_02">第 2 卷</el-menu-item>
-          <el-menu-item index="1-1-3" @click="navigateToPost_03">第 3 卷</el-menu-item>
-          <el-menu-item index="1-1-4" @click="navigateToPost_04">第 4 卷</el-menu-item>
-          <el-menu-item index="1-1-5">第 5 卷</el-menu-item>
-          <el-menu-item index="1-1-6">第 6 卷</el-menu-item>
-          <el-menu-item index="1-1-7">第 7 卷</el-menu-item>
-          <el-menu-item index="1-1-8">第 8 卷</el-menu-item>
-          <el-menu-item index="1-1-9">第 9 卷</el-menu-item>
-          <el-menu-item index="1-1-10">第 10 卷</el-menu-item>
+          <template #title><span>星星</span></template>
+          <el-menu-item index="1-1-1" @click="navigateToPost_01">NGC 4731</el-menu-item>
+          <el-menu-item index="1-1-2" @click="navigateToPost_02">NGC 6744</el-menu-item>
+          <el-menu-item index="1-1-3" @click="navigateToPost_03">NGC 4449</el-menu-item>
+          <el-menu-item index="1-1-4" @click="navigateToPost_04">NGC 2217</el-menu-item>
+          <el-menu-item index="1-1-5" @click="navigateToPost_05">M76</el-menu-item>
         </el-sub-menu>
       </el-menu-item-group>
       <!--      <el-menu-item-group title="Group Two">-->
       <!--        <el-menu-item index="1-3">item three</el-menu-item>-->
       <!--      </el-menu-item-group>-->
-      <el-sub-menu index="1-2">
-        <template #title><span>第 11-20 卷</span></template>
-        <el-menu-item index="1-2-1">第 11 卷</el-menu-item>
-        <el-menu-item index="1-2-2">第 12 卷</el-menu-item>
-        <el-menu-item index="1-2-3">第 13 卷</el-menu-item>
-        <el-menu-item index="1-2-4">第 14 卷</el-menu-item>
-        <el-menu-item index="1-2-5">第 15 卷</el-menu-item>
-        <el-menu-item index="1-2-6">第 16 卷</el-menu-item>
-        <el-menu-item index="1-2-7">第 17 卷</el-menu-item>
-        <el-menu-item index="1-2-8">第 18 卷</el-menu-item>
-        <el-menu-item index="1-2-9">第 19 卷</el-menu-item>
-        <el-menu-item index="1-2-10">第 20 卷</el-menu-item>
-      </el-sub-menu>
+<!--      <el-sub-menu index="1-2">-->
+<!--        <template #title><span>第 11-20 卷</span></template>-->
+<!--        <el-menu-item index="1-2-1">第 11 卷</el-menu-item>-->
+<!--        <el-menu-item index="1-2-2">第 12 卷</el-menu-item>-->
+<!--        <el-menu-item index="1-2-3">第 13 卷</el-menu-item>-->
+<!--        <el-menu-item index="1-2-4">第 14 卷</el-menu-item>-->
+<!--        <el-menu-item index="1-2-5">第 15 卷</el-menu-item>-->
+<!--        <el-menu-item index="1-2-6">第 16 卷</el-menu-item>-->
+<!--        <el-menu-item index="1-2-7">第 17 卷</el-menu-item>-->
+<!--        <el-menu-item index="1-2-8">第 18 卷</el-menu-item>-->
+<!--        <el-menu-item index="1-2-9">第 19 卷</el-menu-item>-->
+<!--        <el-menu-item index="1-2-10">第 20 卷</el-menu-item>-->
+<!--      </el-sub-menu>-->
     </el-sub-menu>
-    <el-menu-item index="2" @click="openJapanSite">
+    <el-menu-item index="2" @click="openCNSite">
       <el-icon>
         <icon-menu/>
       </el-icon>
-      <template #title>日本原站点</template>
+      <template #title>中国国家航天局</template>
     </el-menu-item>
-    <el-menu-item index="3" @click="openBlog">
+    <el-menu-item index="3" @click="openNASASite">
       <el-icon>
         <icon-menu/>
       </el-icon>
-      <template #title>我的博客</template>
+      <template #title>NASA</template>
+    </el-menu-item>
+    <el-menu-item index="4" @click="openSpaceXSite">
+      <el-icon>
+        <icon-menu/>
+      </el-icon>
+      <template #title>SpaceX</template>
+    </el-menu-item>
+    <el-menu-item index="4" @click="openEUSite">
+      <el-icon>
+        <icon-menu/>
+      </el-icon>
+      <template #title>European Space Agency</template>
     </el-menu-item>
 
     <!--    <el-menu-item index="3" disabled>-->
@@ -80,11 +87,17 @@ import {
 
 const isCollapse = ref(true);
 
-const openJapanSite = () => {
-  window.open('https://xn--q9j984gbug42c4wieqsm2o.jp/', '_blank');
+const openCNSite = () => {
+  window.open('https://www.cnsa.gov.cn//', '_blank');
 };
-const openBlog = () => {
-  window.open('https://www.yuzhii0718.eu.org/', '_blank');
+const openSpaceXSite = () => {
+  window.open('https://www.spacex.com/', '_blank');
+};
+const openEUSite = () => {
+  window.open('https://www.esa.int//', '_blank');
+};
+const openNASASite = () => {
+  window.open('https://www.nasa.gov//', '_blank');
 };
 
 import { useRouter } from 'vue-router'
@@ -92,17 +105,19 @@ import { useRouter } from 'vue-router'
 const router = useRouter()
 
 const navigateToPost_01 = () => {
-  router.push({ name: 'Post01' })
+  window.open('https://science.nasa.gov/image-detail/hubble-ngc4731-potw2422a/', '_blank');
 }
-
 const navigateToPost_02 = () => {
-  router.push({ name: 'Post02' })
+  window.open('https://www.nasa.gov/image-article/big-brother-milky-way/', '_blank');
 }
 const navigateToPost_03 = () => {
-  router.push({ name: 'Post03' })
+  window.open('https://www.nasa.gov/image-article/big-brother-milky-way/', '_blank');
 }
 const navigateToPost_04 = () => {
-  router.push({ name: 'Post04' })
+  window.open('https://www.nasa.gov/image-article/big-brother-milky-way/', '_blank');
+}
+const navigateToPost_05 = () => {
+  window.open('https://www.nasa.gov/image-article/big-brother-milky-way/', '_blank');
 }
 
 </script>

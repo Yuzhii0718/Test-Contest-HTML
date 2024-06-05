@@ -9,7 +9,7 @@ import Banner from "~/components/home/Banner.vue";
   <div class="main-container">
     <div w="full" py="4" id="Home">
       <Logos my="4" msg=""/>
-      <Home msg="⟪鲁莽天使⟫ 专题"/>
+      <Home msg="『星星』 专题"/>
     </div>
     <div w="full" py="4">
       <Introduction/>

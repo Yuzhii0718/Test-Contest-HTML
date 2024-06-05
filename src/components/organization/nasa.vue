@@ -11,9 +11,9 @@ export default {
   },
   data() {
     return {
-      title: '宇宙探索的历史演进与时代价值',
-      link: 'http://www.rmlt.com.cn/2023/0316/668417.shtml',
-      markdownFile: '/markdown/comment02.md'
+      title: 'NASA',
+      link: 'https://baike.baidu.com/item/%E7%BE%8E%E5%9B%BD%E8%88%AA%E7%A9%BA%E8%88%AA%E5%A4%A9%E5%B1%80/5959612?fromtitle=NASA&fromid=243500',
+      markdownFile: '/markdown/organization/nasa.md'
     };
   }
 };

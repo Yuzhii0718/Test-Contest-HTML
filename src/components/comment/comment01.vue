@@ -11,8 +11,8 @@ export default {
   },
   data() {
     return {
-      title: '【ネタバレ注意！】最終回で恵の魔法が解けた本当の理由',
-      link: 'https://xn--q9j984gbug42c4wieqsm2o.jp/netabare/',
+      title: '人类探索太空的15座里程碑',
+      link: 'https://finance.sina.cn/tech/2021-06-21/detail-ikqcfnca2353928.d.html?fromtech=1&from=wap',
       markdownFile: '/markdown/comment01.md'
     };
   }

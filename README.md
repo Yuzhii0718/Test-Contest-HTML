@@ -1,42 +1,47 @@
-# element-plus-vite-starter
+# Contest-HTML
 
-> A starter kit for Element Plus with Vite
+[!IMPORTANT]这个项目是临时的，不会长期维护
 
-- Preview: <https://vite-starter.element-plus.org>
+> 一个比赛项目使用 Element Plus 以及 Vite
 
-This is an example of on-demand element-plus with [unplugin-vue-components](https://github.com/antfu/unplugin-vue-components).
+部署于 [GitHub Pages](https://yuzhii0718.github.io/Test-Contest-HTML/)
 
-> If you want to import all, it may be so simple that no examples are needed. Just follow [quickstart | Docs](https://element-plus.org/zh-CN/guide/quickstart.html) and import them.
-
-If you just want an on-demand import example `manually`, you can check [unplugin-element-plus/examples/vite](https://github.com/element-plus/unplugin-element-plus/tree/main/examples/vite).
-
-## Project setup
+## setup
 
 ```bash
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### dev
 
 ```bash
 npm run dev
 ```
 
-### Compiles and minifies for production
+### build
 
 ```bash
 npm run build
 ```
 
-## Usage
+## 用法
 
 ```bash
-git clone https://github.com/element-plus/element-plus-vite-starter
-cd element-plus-vite-starter
+git clone git@github.com:Yuzhii0718/Test-Contest-HTML.git
+cd Test-Contest-HTML
 npm i
 npm run dev
 ```
 
-### Custom theme
+## 在本地打开 dist
 
-See `src/styles/element/index.scss`.
+```bash
+npx serve dist
+```
+
+或者使用 http-server
+
+```bash
+npm i -g http-server
+http-server dist
+```

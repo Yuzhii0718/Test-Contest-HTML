@@ -11,9 +11,9 @@ export default {
   },
   data() {
     return {
-      title: '宇宙探索的历史演进与时代价值',
-      link: 'http://www.rmlt.com.cn/2023/0316/668417.shtml',
-      markdownFile: '/markdown/comment02.md'
+      title: '国家航天局',
+      link: 'https://baike.baidu.com/item/%E5%9B%BD%E5%AE%B6%E8%88%AA%E5%A4%A9%E5%B1%80/1759449?fr=ge_ala',
+      markdownFile: '/markdown/organization/cn.md'
     };
   }
 };

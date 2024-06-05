@@ -17,7 +17,16 @@ const navigateTo2_3 = () => {
   router.push({ name: 'Comment03' })
 }
 const navigateTo3_1 = () => {
-  router.push({ name: 'Summary' })
+  router.push({ name: 'CN' })
+}
+const navigateTo3_2 = () => {
+  router.push({ name: 'NASA' })
+}
+const navigateTo3_3 = () => {
+  router.push({ name: 'SpaceX' })
+}
+const navigateTo3_4 = () => {
+  router.push({ name: 'EU' })
 }
 const navigateTo4 = () => {
   router.push({ name: 'About' })
@@ -35,26 +44,19 @@ const navigateTo6 = () => {
     <el-menu-item index="1" @click="navigateToHome">首页</el-menu-item>
     <el-sub-menu index="2">
       <template #title>评论</template>
-      <el-menu-item index="2-1" @click="navigateTo2_1">【剧透警告！】 『惠』身上的魔法在最后一集中被解除的真正原因</el-menu-item>
-      <el-menu-item index="2-2" @click="navigateTo2_2">如果你要制作真人版《鲁莽天使》，演员阵容如何选择？</el-menu-item>
-      <el-menu-item index="2-3" @click="navigateTo2_3">动画版和漫画版的决定性区别在于⌈最后一集中『天使惠』会做什么⌋</el-menu-item>
-<!--      <el-sub-menu index="2-4">-->
-<!--        <template #title>item four</template>-->
-<!--        <el-menu-item index="2-4-1">item one</el-menu-item>-->
-<!--        <el-menu-item index="2-4-2">item two</el-menu-item>-->
-<!--        <el-menu-item index="2-4-3">item three</el-menu-item>-->
-<!--      </el-sub-menu>-->
+      <el-menu-item index="2-1" @click="navigateTo2_1">人类探索太空的15座里程碑</el-menu-item>
+      <el-menu-item index="2-2" @click="navigateTo2_2">宇宙探索的历史演进与时代价值</el-menu-item>
+      <el-menu-item index="2-3" @click="navigateTo2_3">太空探索的故事</el-menu-item>
     </el-sub-menu>
     <el-sub-menu index="3">
-      <template #title>设定</template>
-      <el-menu-item index="3-1"  @click="navigateTo3_1">概要</el-menu-item>
-      <el-menu-item index="3-2">传记</el-menu-item>
-      <el-menu-item index="3-3">魔法书</el-menu-item>
-      <el-menu-item index="3-4">男子汉天书</el-menu-item>
-      <el-menu-item index="3-4">人物专题</el-menu-item>
+      <template #title>航天机构</template>
+      <el-menu-item index="3-1"  @click="navigateTo3_1">中国国家航天局</el-menu-item>
+      <el-menu-item index="3-2"  @click="navigateTo3_2">NASA</el-menu-item>
+      <el-menu-item index="3-3"  @click="navigateTo3_3">SpaceX</el-menu-item>
+      <el-menu-item index="3-4"  @click="navigateTo3_4">欧洲空间局</el-menu-item>
     </el-sub-menu>
     <el-menu-item index="4" @click="navigateTo4">关于</el-menu-item>
-    <el-menu-item index="5" @click="navigateTo5">问题</el-menu-item>
+    <el-menu-item index="5" @click="navigateTo5">黑洞</el-menu-item>
     <el-menu-item index="6" @click="navigateTo6">资源</el-menu-item>
     <el-menu-item h="full" @click="toggleDark()">
       <button

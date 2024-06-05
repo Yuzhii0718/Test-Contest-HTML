@@ -10,7 +10,7 @@ defineProps<{ msg: string }>();
   <h1 color="$ep-color-primary">{{ msg }}</h1>
 
   <p>
-    原书名 ⟪天使な小生意気⟫
+    星星
   </p>
 
   <el-divider border-style="dashed">
@@ -21,9 +21,6 @@ defineProps<{ msg: string }>();
 
   <!-- example components -->
   <h2>申明</h2>
-  <!--  <p class="lookup">24年2月25日，我看完了⟪天使な小生意気⟫的动漫，<br>-->
-  <!--    这是一部很好的少年动漫，天真无邪的人物让我十分的憧憬与向往，遂制作该网页</p>-->
-  <p>我将翻译一些文章在这个页面，如果打不开，就是没有上传</p>
   <p>如果构成侵权，请联系我进行删除。</p>
   <p><a href="mailto:admin@yuzhii0718.eu.org">
     <el-popover

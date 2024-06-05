@@ -11,8 +11,8 @@ export default {
   },
   data() {
     return {
-      title: 'カテゴリー: 疑問',
-      link: 'https://xn--q9j984gbug42c4wieqsm2o.jp/category/question/',
+      title: '黑洞起源之谜',
+      link: 'https://www.nasachina.cn/pos/5508.html',
       markdownFile: '/markdown/qa.md'
     };
   }

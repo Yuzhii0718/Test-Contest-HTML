@@ -2,39 +2,21 @@
 
 import {ElNotification} from 'element-plus'
 
-const downloading01_1 = () => {
+const downloading01 = () => {
   ElNotification({
-    title: '视频资源',
-    message: '下载马上开始···',
+    title: '资源 1',
+    message: '打开黑洞的发布页···',
     type: 'success',
   })
-  const link = document.createElement('a');
-  link.href = './assets/torrent.torrent';
-  link.download = '[kisssub.org]20yrs ago - [2002-2003] Cheeky Angel_魯莽天使(天使な小生意気)_TV.torrent';
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
-}
-const downloading01_2 = () => {
-  ElNotification({
-    title: '视频资源',
-    message: '下载马上开始···',
-    type: 'success',
-  })
-  window.open('magnet:?xt=urn:btih:7582f8c7e7caef5733f993a4c9761b7259f8696d&amp;tr=http://open.acgtracker.com:1096/announce', '_blank');
+  window.open('https://www.eso.org/public/images/eso1907a/', '_blank');
 }
 const downloading02 = () => {
   ElNotification({
-    title: '汉语字幕',
-    message: '下载马上开始···',
+    title: '资源 2',
+    message: '打开银河系全景图的发布页···',
     type: 'success',
   })
-  const link = document.createElement('a');
-  link.href = './assets/ssa_chs&cht.zip';
-  link.download = 'Cheeky-Angel_魯莽天使(天使な小生意気)_ssa_chs&cht.zip';
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
+  window.open('https://www.eso.org/public/images/eso1242a/', '_blank');
 }
 </script>
 
@@ -42,40 +24,37 @@ const downloading02 = () => {
   <div class="main-container">
     <h1>资源</h1>
     <br>
-    <p id="describe">视频推荐下载<code>DVDRip.MKV.1296x720.RAW.U2</code>，此外，我还制作了与之对应的字幕，繁体是视频资源中经过修正的，简体是我额外制作的，效果也很好。</p>
+<!--    <p id="describe">这里收集了一些有关太空的资源文件，源自互联网</p>-->
     <div class="download-card">
       <el-card class="box-card">
         <template #header>
           <div class="card-header">
-            <span>视频资源</span>
-            <el-button class="button" @click="downloading01_1" text>种子下载</el-button>
-            <el-button class="button" @click="downloading01_2" text>磁力下载</el-button>
+            <span>黑洞</span>
+            <el-button class="button" @click="downloading01" text>前往官网</el-button>
           </div>
         </template>
         <div class="scrollable-area">
-          <div class="text item">DVDRip.AVI.640x360.twHard (1-10)</div>
-          <div class="text item">DVDRip.AVI.704x396.U2</div>
-          <div class="text item">DVDRip.AVI.720x400.enHard (23-50)</div>
-          <div class="text item">DVDRip.MKV.1296x720.RAW.U2</div>
-          <div class="text item">DVDRip.MP4.704x480.U2</div>
-          <div class="text item">TVRip.AVI.640x480.enHard (1-22)</div>
-          <div class="text item">z.comic</div>
-          <div class="text item">z.music</div>
+          <div class="text item">1024×768 ：https://cdn.eso.org/images/wallpaper1/eso1907a.jpg</div>
+          <div class="text item">1280×1024：https://cdn.eso.org/images/wallpaper2/eso1907a.jpg</div>
+          <div class="text item">1600×1200：https://cdn.eso.org/images/wallpaper3/eso1907a.jpg</div>
+          <div class="text item">1920×1200：https://cdn.eso.org/images/wallpaper4/eso1907a.jpg</div>
+          <div class="text item">2048×1536：https://cdn.eso.org/images/wallpaper5/eso1907a.jpg</div>
         </div>
-        <template #footer>使用 BitTorrent 软件进行下载</template>
+        <template #footer>First Image of a Black Hole</template>
       </el-card>
       <el-card class="box-card">
         <template #header>
           <div class="card-header">
-            <span>汉语字幕</span>
-            <el-button class="button" @click="downloading02" text>下载</el-button>
+            <span>银河系全景图 81亿像素</span>
+            <el-button class="button" @click="downloading02" text>前往官网</el-button>
           </div>
         </template>
         <div class="scrollable-area">
-          <div class="text item">[AI-Raws] 天使な小生意気 #zN (HEVC 1296x720 yuv444p10le FLAC)[hash].chs.ssa</div>
-          <div class="text item">[AI-Raws] 天使な小生意気 #zN (HEVC 1296x720 yuv444p10le FLAC)[hash].cht.ssa</div>
+          <div class="text item">变焦查看器：http://www.eso.org/public/images/eso1242a/zoomable</div>
+          <div class="text item">3.92GB压缩版：http://www.eso.org/public/archiv ... iff40k/eso1242a.tif</div>
+          <div class="text item">24.6GB原版：http://www.eso.org/public/archives/images/original/eso1242a.psb</div>
         </div>
-        <template #footer>配合专业的播放器使用</template>
+        <template #footer>VISTA gigapixel mosaic of the central parts of the Milky Way</template>
       </el-card>
     </div>
     <p id="right" >资源来自互联网，如有侵权，请联系我删除。</p>
@@ -115,8 +94,8 @@ const downloading02 = () => {
 }
 
 .box-card {
-  width: 480px;
-  height: 300px;
+  width: 500px;
+  height: 320px;
 }
 
 .download-card {

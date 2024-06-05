@@ -4,79 +4,73 @@ import MainPage from '../components/MainPage.vue'
 import Comment01 from "../components/comment/comment01.vue";
 import Comment02 from "../components/comment/comment02.vue";
 import Comment03 from "../components/comment/comment03.vue";
-import Post01 from "../components/post/post01.vue";
-import Post02 from "../components/post/post02.vue";
-import Post03 from "../components/post/post03.vue";
-import Post04 from "../components/post/post04.vue";
-import Summary from "../components/basic/summary.vue";
+import CN from "../components/organization/cn.vue";
+import NASA from "../components/organization/nasa.vue";
+import SpaceX from "../components/organization/spacex.vue";
+import EU from "../components/organization/eu.vue";
 import About from '../components/About.vue'
 import QA from "../components/QA.vue";
 import Resources from "../components/Resources.vue";
 
 const routes: RouteRecordRaw[] = [
     {
-        path: '/',
+        path: '/Test-Contest-HTML/',
         name: 'Home',
         component: MainPage
     },
     {
-        path: '/comment01',
+        path: '/Test-Contest-HTML/comment/01/',
         name: 'Comment01',
         component: Comment01
     },
     {
-        path: '/comment02',
+        path: '/Test-Contest-HTML/comment/02/',
         name: 'Comment02',
         component: Comment02
     },
     {
-        path: '/comment03',
+        path: '/Test-Contest-HTML/comment/03/',
         name: 'Comment03',
         component: Comment03
     },
     {
-        path: '/post01',
-        name: 'Post01',
-        component: Post01
+        path: '/Test-Contest-HTML/organization/cn/',
+        name: 'CN',
+        component: CN
     },
     {
-        path: '/post02',
-        name: 'Post02',
-        component: Post02
+        path: '/Test-Contest-HTML/organization/nasa/',
+        name: 'NASA',
+        component: NASA
     },
     {
-        path: '/post03',
-        name: 'Post03',
-        component: Post03
+        path: '/Test-Contest-HTML/organization/spacex/',
+        name: 'SpaceX',
+        component: SpaceX
     },
     {
-        path: '/post04',
-        name: 'Post04',
-        component: Post04
+        path: '/Test-Contest-HTML/organization/eu/',
+        name: 'EU',
+        component: EU
     },
     {
-        path: '/summary',
-        name: 'Summary',
-        component: Summary
-    },
-    {
-        path: '/about',
+        path: '/Test-Contest-HTML/about/',
         name: 'About',
         component: About
     },
     {
-        path: '/qa',
+        path: '/Test-Contest-HTML/qa/',
         name: 'QA',
         component: QA
     },
     {
-        path: '/resources',
+        path: '/Test-Contest-HTML/resources/',
         name: 'Resources',
         component: Resources
     },
     {
         path: '/:catchAll(.*)',
-        redirect: '/'
+        redirect: '/Test-Contest-HTML/'
     }
 ]
 
