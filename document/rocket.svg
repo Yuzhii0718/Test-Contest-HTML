@@ -4,6 +4,18 @@
 <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
  width="1280.000000pt" height="925.000000pt" viewBox="0 0 1280.000000 925.000000"
  preserveAspectRatio="xMidYMid meet">
+    <defs>
+        <filter id="f1" x="0" y="0">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="2" />
+            <feDropShadow dx="1" dy="1" stdDeviation="1" flood-color="blue"/>
+        </filter>
+    </defs>
+    <style >
+        .text {
+          color: white;
+          text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        }
+    </style>
 <metadata>
 Created by potrace 1.15, written by Peter Selinger 2001-2017
 </metadata>
@@ -1099,4 +1111,6 @@ c-25 -1 -45 6 -60 20 -44 38 -48 35 -25 -19z"/>
 <path d="M12185 300 c-4 -6 5 -10 19 -10 14 0 26 5 26 10 0 6 -9 10 -19 10
 -11 0 -23 -4 -26 -10z"/>
 </g>
+    <text x="400" y="450" font-family="Verdana" font-size="48" fill="white" filter="url(#f1)" class="text">Fly Me To The Moon</text>
+    <text x="450" y="550" font-family="Verdana" font-size="48" fill="white" filter="url(#f1)" class="text">带我去宇宙看看</text>
 </svg>
