@@ -1,10 +1,23 @@
 # Contest-HTML
 
-[!IMPORTANT]这个项目是临时的，不会长期维护
+星星 探索宇宙
 
-> 一个比赛项目使用 Element Plus 以及 Vite
+![rocket](https://svgsilh.com/svg/1295090.svg)
 
-部署于 [GitHub Pages](https://yuzhii0718.github.io/Test-Contest-HTML/)
+[!IMPORTANT] 这个项目是临时的，不会长期维护
+
+> 一个比赛项目使用 Element Plus 以及 Vite 构建
+
+在线演示，部署于 [GitHub Pages](https://yuzhii0718.github.io/Test-Contest-HTML/)
+
+> 特性
+
+- 使用 Vite 构建
+- 使用 Element Plus
+- 使用 TypeScript
+- 支持 Dark Mode
+- Markdown 渲染
+- 移动端适配
 
 ## setup
 
@@ -66,3 +79,4 @@ python publish_dist.py
 ![image](./document/1.png)
 ![image](./document/2.png)
 ![image](./document/3.png)
+![image](./document/4.png)
