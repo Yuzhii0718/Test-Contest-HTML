@@ -2,7 +2,7 @@
 
 星星 探索宇宙
 
-![rocket](https://svgsilh.com/svg/1295090.svg)
+![rocket](./document/rocket.svg)
 
 [!IMPORTANT] 这个项目是临时的，不会长期维护
 
